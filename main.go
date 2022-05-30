@@ -141,7 +141,7 @@ func handleControls() {
 
 func main() {
 	// Initialize the game
-	g = game.NewGame(512, 512, true)
+	g = game.NewGame(128, 128, true)
 
 	// Run the game logic ticker on a separate thread
 	go runGameLogic()
