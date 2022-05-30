@@ -82,3 +82,16 @@ func (g *Game) String() string {
 
 	return buf.String()
 }
+
+func (g *Game) GetCurrentWorldState() [][]uint8 {
+	return g.aWorld.GetCurrentState()
+}
+
+// Returns width, height
+func (g *Game) GetSize() (uint32, uint32) {
+	return g.w, g.h
+}
+
+func (g *Game) GetGeneration() uint64 {
+	return g.generations
+}

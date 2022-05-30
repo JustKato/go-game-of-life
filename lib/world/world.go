@@ -81,3 +81,7 @@ func (w *World) ProcessCell(x int, y int) uint8 {
 		return 0
 	}
 }
+
+func (w *World) GetCurrentState() [][]uint8 {
+	return w.cells
+}
